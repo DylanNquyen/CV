@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thien Nguyen - CV</title>
+    
+    <!-- Bootstrap & Font Awesome -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="CV.css">  
+</head>
+<body>
+
+    <!-- Hiệu ứng hạt trực tiếp trên nền -->
+    <canvas id="particleCanvas"></canvas>
+
+    <div class="container">
+        <!-- Header -->
+        <header class="text-center py-4">
+            <h1>Thien Nguyen</h1>
+            <p class="lead">Web Developer</p>
+            <div class="social-links mt-3">
+                <a href="https://www.linkedin.com/in/thien-nguyen-0028821a7/" target="_blank" class="me-3"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/DylanNquyen" target="_blank" class="me-3"><i class="fab fa-github"></i></a>
+                <a href="https://www.facebook.com/profile.php?id=100041301602063" target="_blank"><i class="fab fa-facebook"></i></a>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <div class="row g-3">
+            <!-- Sidebar -->
+            <aside class="col-md-4">
+                <div class="sidebar card p-3">
+                    <section class="text-center">
+                        <div class="profile-container">
+                            <img src="hinh/1.jpg" alt="Thien Nguyen" class="profile-img">
+                            <div class="thought-bubble" id="thoughtBubble">Hire Me!</div>
+                        </div>
+                        <h2>Contacts</h2>
+                        <p><i class="fas fa-envelope me-2"></i>thiennguyenngoc004@gmail.com</p>
+                        <p><i class="fas fa-phone me-2"></i>+84 969 887 591</p>
+                        <p><i class="fas fa-map-marker-alt me-2"></i>Ho Chi Minh City, Vietnam</p>
+                    </section>
+                    
+                    <section>
+
+                        <h2>Skills</h2>
+
+                        <div class="skill">
+                            <p>HTML & CSS</p>
+                            <div class="progress-container">
+                                <div class="progress">
+                                    <div class="progress-bar" data-percent="90"></div>
+                                </div>
+                                <span class="percent-text">90%</span>
+                            </div>
+                        </div>
+                        
+                        <div class="skill">
+                            <p>JavaScript</p>
+                            <div class="progress-container">
+                                <div class="progress">
+                                    <div class="progress-bar" data-percent="85"></div>
+                                </div>
+                                <span class="percent-text">85%</span>
+                            </div>
+                        </div>
+                        
+                        <div class="skill">
+                            <p>React</p>
+                            <div class="progress-container">
+                                <div class="progress">
+                                    <div class="progress-bar" data-percent="75"></div>
+                                </div>
+                                <span class="percent-text">75%</span>
+                            </div>
+                        </div>
+
+                        <div class="skill">
+                            <p>Python</p>
+                            <div class="progress-container">
+                                <div class="progress">
+                                    <div class="progress-bar" data-percent="75"></div>
+                                </div>
+                                <span class="percent-text">75%</span>
+                            </div>
+                        </div>
+
+                        <div class="skill">
+                            <p>C#</p>
+                            <div class="progress-container">
+                                <div class="progress">
+                                    <div class="progress-bar" data-percent="70"></div>
+                                </div>
+                                <span class="percent-text">70%</span>
+                            </div>
+                        </div>
+
+                    </section>
+
+                    <section>
+                        <br>
+                        <h2>Certifications</h2>
+                        <ul>
+                            <li>React Developer - Coursera | 2023</li>
+                            <li>Full-Stack Web Development - Udemy | 2022</li>
+                        </ul>
+                    </section>
+
+                     <!-- Hire Me Card -->
+                     <section class="hire-me card p-3 mt-3 text-center">
+                        <h2>_______</h2>
+                        <input type="text" class="form-control mb-2" placeholder="Your Name">
+                        <input type="email" class="form-control mb-2" placeholder="Your Email">
+                        <textarea class="form-control mb-2" placeholder="Your Message" rows="3"></textarea>
+                        <button class="hire-btn" onclick="toggleHireStatus()">Hire Me</button>
+                    </section>
+                </div>
+            </aside>
+
+            <!-- Main Content -->
+            <main class="col-md-8">
+                <div class="main-content card p-3">
+                    <section>
+                        <h2>About Me</h2>
+                        <p>I am a passionate web developer with over 3 years of experience in front-end development using HTML, CSS, JavaScript, React, Python and C#. I love creating functional and visually appealing digital solutions.</p>
+                    </section>
+                    
+                    <section>
+                        <br>
+                        <h2>Experience</h2>
+                        <div class="experience">
+                            <h3>Web Developer - Hutech Company</h3>
+                            <p><i>Jan 2020 - Present</i></p>
+                            <ul>
+                                <li>Developed and maintained company websites using HTML, CSS, and JavaScript.</li>
+                                <li>Collaborated with designers to create responsive layouts.</li>
+                                <li>Optimized web performance and SEO, increasing traffic by 20%.</li>
+                            </ul>
+                        </div>
+                        <div class="experience mt-3">
+                            <h3>Junior Developer - Hutech Startup</h3>
+                            <p><i>Feb 2022 - Dec 2023</i></p>
+                            <ul>
+                                <li>Assisted in building web applications with React and RESTful APIs.</li>
+                                <li>Performed bug fixes, code reviews, and unit testing.</li>
+                                <li>Contributed to Agile development processes.</li>
+                            </ul>
+                        </div>
+                    </section>
+                    
+                    <section>
+                        <br>
+                        <h2>Education</h2>
+                        <div class="education">
+                            <h3>Software Engineer / Web Developer</h3>
+                            <p><i>Hutech University, HCMC | 2021 - Present</i></p>
+                        </div>
+                    </section>
+
+                    <section>
+                        <br>
+                        <h2>Projects</h2>
+                        <div class="project">
+                            <h3>E-commerce Website</h3>
+                            <p>Built a fully responsive e-commerce platform using React and Node.js <i>| 2024</i></p>
+                        </div>
+                        <div class="project mt-3">
+                            <h3>Portfolio Website</h3>
+                            <p>Designed a personal portfolio with HTML, CSS, and JavaScript <i>| 2024</i></p>
+                        </div>
+                    </section>
+                </div>
+            </main>
+        </div>
+
+        <!-- Footer -->
+        <footer class="text-center py-3 mt-4">
+            <p>© 2025 Thien Nguyen. All rights reserved.</p>
+        </footer>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="cv.js"></script>
+
+</body>
+</html>
